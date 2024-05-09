@@ -38,8 +38,6 @@ jacocoTestCoverageVerification {
     violationRules {
         rule {
             limit {
-                counter = "LINE"
-                value = "TOTALCOUNT"
                 minimum = 1.0
             }
         }
