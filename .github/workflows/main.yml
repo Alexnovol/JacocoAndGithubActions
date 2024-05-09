@@ -11,6 +11,8 @@ jobs:
         with:
           distribution: 'oracle'
           java-version: '17'
+      - name: Change wrapper permissions
+        run: chmod +x ./gradlew
       - name: Gradle Build
         run: ./gradlew build
       - name: Gradle Test
