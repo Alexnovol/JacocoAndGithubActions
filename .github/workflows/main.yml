@@ -15,5 +15,5 @@ jobs:
         with:
           java-version: 17.0.2
       - name: Gradle Build
-      - run: ./gradlew build --no-daemon
+        run: ./gradlew build --no-daemon
    
