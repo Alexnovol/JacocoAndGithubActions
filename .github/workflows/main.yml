@@ -1,7 +1,11 @@
 name: Main
-on: 
+on:
   push:
+    branches:
+      - 'master'
   pull_request:
+    branches:
+      - 'master'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -19,4 +23,3 @@ jobs:
         run: ./gradlew jacocoTestCoverageVerification
       - name: Gradle Build
         run: ./gradlew build
-   
